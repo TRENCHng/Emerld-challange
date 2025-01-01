@@ -432,9 +432,10 @@ a, li{
             /* MOBILE VIEW */
 @media only screen and (max-width: 768px) {
      body{
-     width: 400px wide;
+     width: fit-content;
 }
     .nav-list{
      display: none;
+     justify-content: space-between;
  }
 }
