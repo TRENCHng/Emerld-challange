@@ -1,4 +1,4 @@
-@import url(./reset.css);
+@import url(./reset.css); 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --white: white ;
@@ -10,12 +10,15 @@
 }
 body{
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'inter', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"width" 100;
     color: var(--white);
     /* background-color: var(--grey-black); */
+}
+h1{
+    font-family:'poppins';
 }
 html{
     scroll-behavior: smooth;
@@ -37,6 +40,16 @@ a, li{
     gap: 2rem;
     /* color: var(--white); */
     /* font-family: sans-serif; */
+}
+#pro:hover{
+    /* text-decoration: underline; */
+    transform: scale(1.1);
+}
+#abt:hover{
+    transform: scale(1.1);
+}
+#cont:hover{
+    transform: scale(1.1);
 }
 .navbar{
     display: flex;
@@ -91,6 +104,18 @@ a, li{
     color: rgb(179, 27, 27);
     padding: 25px 45px 35px 45px;
 }
+.btn-1:hover{
+    background: transparent;
+    border: 1px solid var(--red);
+    transform: scale(1.1);
+    transition: trasform .2s;
+}
+.btn-2:hover{
+    background: transparent;
+    border: 1px solid var(--red);
+    transform: scale(1.1);
+    transition: transform .2s;
+}
 .btn-2{
     background-color: rgb(179, 27, 27);
     color: var(--white);
@@ -121,6 +146,10 @@ a, li{
     border-radius: 5px;
     border: none;
 }
+#search-btn:hover{
+    background-color: var(--white);
+    color: var(--red);
+}
 #input{
     /* width: 22.5rem; */
     padding: 0.5rem 5rem;
@@ -134,13 +163,31 @@ a, li{
           /* CAED STYLING */
 .kitchor-image, .fylo-image, .hoobank-image, .renax-image{
     width: 19rem;
-
     background-color: white;
     height: 30rem;
     border-radius: 2rem;
     padding: 1rem 1rem 0 1rem;
     color: var(--light-black);
 }
+
+         /* CARD HOVER */
+.hoobank-image:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+.fylo-image:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+.kitchor-image:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+.renax-image:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
 .under{
     display: flex;
     justify-content: space-around;
@@ -152,9 +199,51 @@ a, li{
     border: none;
     padding: 15px 45px 15px 45px;
     border-radius: 1rem;
+    transition: transform .2s;
 }
+                /* CARD BUTTON HOVER CSS */
+
+#see-your:hover{
+    background: transparent;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+#see-your:active{
+    transform: scale(1.1);
+    /* transition: transform .2s; */
+}
+
+#two:hover{
+    background: transparent;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+#two:active{
+    transform: scale(1.1);
+}
+
+#three:hover{
+    background: transparent;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+#three:active{
+    transform: scale(1.1);
+}
+
+#four:hover{
+    background: transparent;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+#four:active{
+    transform: scale(1.1);
+}
+
+
 .under img{
     /* height: 19rem; */
+    border-radius: 0.5rem;
 }
 .kitchor-image img{
     height: 16rem;
@@ -193,26 +282,28 @@ a, li{
     flex-direction: column;
     gap: 1rem;
 }
-/* ABOUT ME SECTION */
+
+           /* ABOUT ME SECTION */
+
 .about-me{
     /* background: linear-gradient(var(--red), var(--grey-black)); */
     background-color: var(--white);
     color: var(--grey-black);
-    padding-top: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 .about-txt span{
     color: var(--red);
 }
-.about-txt progress{
-    /* border: 0.1px solid white; */
-}
+
 #h2{
     text-align: center;
     color: var(--red);
     /* text-decoration: underline 2px solid var(--red); */
 }
 .about-img img{
-    height: 29rem;
+    height: 30rem;
+    border-radius: 1rem;
 }
 .about-div{
     display: flex;
@@ -240,15 +331,110 @@ a, li{
 }
 .about-me p{
     font-weight: 600;
-    width: 78rem;
-    text-align: center;
-    
-    /* padding-left: 8rem;
-    padding-top: 3rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #para{
-    
+   /* padding-left: 5rem;  */
+   text-align: center;
 }
-/* #progress{
-  background-color: var(--red);
-} */
+
+                     /* CONTACT ME */
+
+.contact{
+    color: var(--black);
+    text-align: center;
+    padding-top: 7rem;
+    background-color: var(--light-black);
+    padding-bottom: 10rem;
+}
+.contact h2{
+    color: var(--white);
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    align-items: center;
+}
+.down{
+    padding-top: 1rem;
+}
+.firsticn, .secondicn{
+    display: flex;
+    gap: 2rem; 
+}
+.contact-card{
+    /* position: relative; */
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    border-radius: 1.5rem;
+    padding: 1rem 0rem 4rem 0rem;
+    width: 45rem;
+    margin-left: 20rem;
+    margin-top: 5rem;
+
+}
+.contact-card h3{
+    color: var(--red);
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+.card-content input{
+    border: none;
+    border-radius: 0.5rem;
+    height: 2.4rem;
+    border: 2px solid var(--red);
+}
+.card-content button{
+    background-color: var(--white);
+    color: var(--red);
+    border: 2px solid var(--red);
+    padding: 5px 20px 5px 20px;
+    border-radius: 0.5rem;
+    font-weight: 400;
+}
+#btn-hov:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+#btn-hov:active{
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+                /* FOOTER */
+.ending{
+    color: #141414;
+}
+.ending li{
+    color: #141414;
+    font-size: 14px;
+    font-weight: 500;
+}
+.general-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+.icon-flex{
+    display: flex;
+    gap: 0.5rem;
+}
+.one p{
+    width: 10rem;
+    text-align: start;
+    font-size: 13px;
+}
+
+
+            /* MOBILE VIEW */
+@media only screen and (max-width: 768px) {
+     body{
+     width: 400px wide;
+}
+    .nav-list{
+     display: none;
+ }
+}
