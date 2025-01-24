@@ -372,7 +372,7 @@ a, li{
     border-radius: 1.5rem;
     padding: 1rem 0rem 4rem 0rem;
     width: 45rem;
-    margin-left: 20rem;
+    margin-left: 25rem;
     margin-top: 5rem;
 
 }
@@ -430,12 +430,21 @@ a, li{
 
 
             /* MOBILE VIEW */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
      body{
-     width: fit-content;
+     /* width: 100vw; */
+     height: 100vh;
 }
     .nav-list{
      display: none;
-     justify-content: space-between;
- }
+}
+.search{
+    flex-direction: column;
+}
+.text-btn{
+    flex-direction: column;
+}
+.text h1{
+    text-align: center;
+}
 }
