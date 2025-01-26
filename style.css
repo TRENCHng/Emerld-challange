@@ -79,6 +79,9 @@ a, li{
     color: rgb(179, 27, 27);
     size: 5rem;
 }
+#personal{
+    font-family: monospace;
+}
 .dev-speech{
     display: flex;
     align-items: center;
@@ -168,6 +171,7 @@ a, li{
     border-radius: 2rem;
     padding: 1rem 1rem 0 1rem;
     color: var(--light-black);
+    margin: auto;
 }
 
          /* CARD HOVER */
@@ -192,6 +196,8 @@ a, li{
     display: flex;
     justify-content: space-around;
     padding-top: 10rem;
+    margin: auto;
+    width: 100%;
 }
 .under button{
     background-color: var(--red);
@@ -372,7 +378,7 @@ a, li{
     border-radius: 1.5rem;
     padding: 1rem 0rem 4rem 0rem;
     width: 45rem;
-    margin-left: 25rem;
+    margin: auto;
     margin-top: 5rem;
 
 }
@@ -433,15 +439,15 @@ a, li{
         font-size: 14px; /* Slightly smaller font size for readability */
         padding: 0;
         margin: 0;
+        /* width: 1200px; */
     }
 
     /* Navbar adjustments */
     .navbar {
-        /* flex-direction: column; */
-        gap:3rem
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        padding: 1rem 0;
+        /* gap: 5rem; */
+        padding:1rem 1rem 0 1rem;
     }
 
     .nav-list {
@@ -455,22 +461,128 @@ a, li{
         padding: 0.5rem;
     }
 
-            /* MOBILE VIEW */
-@media only screen and (max-width: 768px){
-     body{
-     /* width: 100vw; */
-     height: 100vh;
-}
-    .nav-list{
-     display: none;
-}
-.search{
-    flex-direction: column;
-}
-.text-btn{
-    flex-direction: column;
-}
-.text h1{
-    text-align: center;
-}
+    /* Background and text section */
+    .background-image {
+        min-height: 50vh; /* Reduced height for mobile */
+    }
+
+    .dev-speech{
+        text-align: center;
+        padding: 13rem 0 0 0;
+    }
+
+    .text {
+        width: 100%; /* Full width */
+        padding: 1rem;
+    }
+
+    .text h1 {
+        font-size: 2.3rem; /* Smaller heading */
+        text-align: inherit;
+    }
+
+    .text-btn {
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .text-btn button {
+        padding: 0.9rem 3.5rem;
+        font-size: 12px;
+        margin: 0.5rem;
+    }
+
+    /* Section 2 - Courses */
+    .sec-2 {
+        padding: 2rem;
+    }
+
+    .courses {
+        padding-top: 3rem;
+    }
+
+    .title {
+        font-size: 1.2rem; /* Smaller title for courses */
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+                /* PROJECTS */
+    .search{
+        flex-direction: column;
+    }
+
+    /* Cards Adjustments */
+    .kitchor-image, .fylo-image, .hoobank-image, .renax-image {
+        width: 89%; /* Full width for mobile */
+        height: auto;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    .under{
+        flex-direction: column;
+        padding: 10rem 1rem 2rem 1rem;
+    }
+    .under button{
+        margin-bottom: 10px;
+    }
+
+             /* ABOUT ME SECTION */
+    .about-div{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 3rem 1rem;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    .contact-card {
+        width: 100%; /* Full width for contact form */
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-content input{
+        width: 100%; /* Full width inputs */
+    }
+
+    .card-content button{
+        padding: 0.5rem 4rem;
+        color: var(--white);
+        background-color: var(--red);
+        margin:0.7rem;
+    }
+
+
+    /* Footer Section */
+    .ending {
+        font-size: 12px;
+    }
+
+    .general-flex {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .icon-flex {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .cont{
+        display: none;
+    }
 }

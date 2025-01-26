@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* MOBILE VIEW */
+            @media only screen and (max-width: 768px){
+                body{
+                /* width: 100vw; */
+                height: 100vh;
+           }
+               .nav-list{
+                display: none;
+           }
+           .search{
+               flex-direction: column;
+           }
+           .text-btn{
+               flex-direction: column;
+           }
+           .text h1{
+               text-align: center;
+           }
+           }
